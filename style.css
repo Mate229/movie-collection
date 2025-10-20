@@ -62,6 +62,10 @@ section > div {
     background-color: var(--sct-bg-clr);
 }
 
+section > div:hover {
+    transform: scale(1.05);
+}
+
 button {
     font: inherit;
     padding: 5px 10px;
