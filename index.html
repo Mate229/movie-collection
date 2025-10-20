@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mate Watch</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header">
+        <h1>Your Online Movie Collection</h1>
+        <h1 class="total">0</h1>
+    </div>
+
+    <section>
+        <svg class="add-new" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Add a new movie</title><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+    </section>
+
+    <footer><h4>Crafted with love by Mate229 ❤️</h4></footer>
+
+    <dialog>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Movie name" required>
+            </div>
+
+            <div>
+                <label for="producer">Producer</label>
+                <input type="text" id="producer" name="producer" placeholder="Movie producer" required>
+            </div>
+
+            <div>
+                <label for="year">Release year</label>
+                <input type="number" id="year" name="year" placeholder="Movie year" max="2025" maxlength="4" minlength="4" required>
+            </div>
+
+            <div>
+                <label for="status">Click if you have already watched it</label>
+                <input type="checkbox" id="status">
+            </div>
+
+            <div>
+                <button id="cancel">Cancel</button>
+                <button id="submit">Add to Collection</button>
+            </div>
+        </form>
+    </dialog>
+    </div>
+</body>
+</html>

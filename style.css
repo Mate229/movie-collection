@@ -1,0 +1,113 @@
+:root {
+    --hd-bg-clr: #e94f37;
+    --sct-bg-clr: #f6f7eb;
+    --txt-xlr: #393e41;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+body {
+    color: var(--txt-xlr);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 20vh 75vh 5vh;
+}
+
+.header {
+    background-color: var(--hd-bg-clr);
+    color: var(--sct-bg-clr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.total {
+    background-color: var(--sct-bg-clr);
+    color: var(--hd-bg-clr);
+    padding: 25px;
+    border-radius: 50%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    overflow: auto;
+    padding: 20px;
+    background-color: var(--txt-xlr)
+}
+
+section > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 5px -5px var(--hd-bg-clr);
+    border-radius: 20px 10px 20px 20px;
+    padding: 5px;
+    background-color: var(--sct-bg-clr);
+}
+
+button {
+    font: inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    box-shadow: 0 0 5px;
+    font-size: larger;
+}
+
+section > div > button:last-of-type {
+    background-color: var(--hd-bg-clr);
+    border: none;
+    color: var(--sct-bg-clr);
+}
+
+section > div > button:first-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    border: none;
+}
+
+section > div > p:first-of-type {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-style: italic;
+    font-size: smaller;
+    font-weight: 700;
+    color: var(--hd-bg-clr);
+}
+
+.add-new {
+    fill: var(--hd-bg-clr);
+    height: max(100px, 100%);
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--txt-xlr);
+    color: var(--sct-bg-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
