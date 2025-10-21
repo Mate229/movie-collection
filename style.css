@@ -35,8 +35,9 @@ body {
 }
 
 .total {
-    background-color: var(--sct-bg-clr);
-    color: var(--hd-bg-clr);
+    background: radial-gradient(var(--txt-xlr), var(--hd-bg-clr));
+    /* background-color: var(--sct-bg-clr); */
+    color: var(--sct-bg-clr);
     padding: 25px;
     border-radius: 50%;
 }
